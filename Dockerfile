@@ -1,4 +1,4 @@
-# Use an official OpenJDK runtime with Java 23 as the base image
+# Use an official OpenJDK runtime as the base image
 FROM openjdk:23-jdk
 
 # Set the working directory inside the container
