@@ -8,6 +8,9 @@ RUN yum install -y tar
 # Copy the project files
 COPY . .
 
+# Add execute permissions to the mvnw script
+RUN chmod +x ./mvnw
+
 # Build the project
 RUN ./mvnw clean package
 
