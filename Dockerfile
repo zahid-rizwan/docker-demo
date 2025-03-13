@@ -2,8 +2,8 @@
 FROM amazoncorretto:23 AS build
 WORKDIR /app
 
-# Install tar (required by ./mvnw)
-RUN yum install -y tar
+# Install tar and gzip (required by ./mvnw)
+RUN yum install -y tar gzip
 
 # Copy the project files
 COPY . .
